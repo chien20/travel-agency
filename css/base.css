@@ -1,0 +1,137 @@
+/* Base Css */
+:root {
+    --header-height: 8rem;
+    --white-color: #fff;
+    --grey-color: #f8f8f8;
+    --primary-color: #3fd0d4;
+    --text-color: #212121;
+    --text-color-grey: #505050;
+}
+
+/* Selection Text */
+::selection {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+::-moz-selection {
+    background:var(--primary-color);
+    color: var(--white-color);
+} 
+::-webkit-selection {
+    background:var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Sroll Y Custom */
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent,var(--primary-color));
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent,#00c6ff);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    line-height: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+li {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+input,
+  button,
+  textarea,
+  select {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+button {
+    cursor: pointer;
+    background-color: #fff;
+}
+svg {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+/* Css Hover Figure Img */
+figure {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+figure:hover img {
+	-webkit-transform: scale(1.06);
+	transform: scale(1.06);
+}
+/* End Css Hover Figure Img */
+
+
+/* Animation */
+@keyframes transform {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes height {
+    from {
+        height: 0rem;
+    }
+    to {
+        height: 100%;
+    }
+}
+@keyframes FadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
