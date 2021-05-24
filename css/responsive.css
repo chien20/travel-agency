@@ -1,18 +1,5 @@
-:root {
-    --header-height: 8rem;
-    --white-color: #fff;
-    --grey-color: #f8f8f8;
-    --primary-color: #3fd0d4;
-    --text-color: #212121;
-    --height-navbar--mobile: 7rem;
-    --text-color-grey: #505050;
-}
 
 
-/* Mobile + Tablet */
-@media only screen and (max-width: 64em) {
-
-}
 
 /* Tablet */
 @media only screen and (min-width: 48.0625em) and (max-width: 64em) {
@@ -694,7 +681,7 @@
     }
     .holiday__choose-flex { /* s */
         --columns: 1;
-        padding: 0 0 0 1rem;
+        padding: 0 1rem 0 1rem;
     }
     .holiday__name { /* s */
         font-size: 3rem;
@@ -702,6 +689,9 @@
     .holiday__des {
         padding: 0 16%;
         font-size: 1.7rem;
+    }
+    .holiday__choose-paris img {
+        padding: 0 1rem;
     }
     /* End Choose Holiday Css */
 
