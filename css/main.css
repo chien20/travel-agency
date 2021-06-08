@@ -1124,6 +1124,7 @@
     margin-bottom: .7rem;
     display: flex;
     align-items: center;
+    padding-left: 1.6rem;
 }
 .footer__input:first-of-type {
     margin-top: 2.8rem;
@@ -1132,12 +1133,13 @@
     color: var(--white-color);
     display: inline-block;
     font-size: 1.4rem;
-    margin: 0 1.6rem;
+    width: 16%;
 }
 .footer__input input {
     background-color: #595959;
     height: 100%;
     color: var(--white-color);
+    width: 84%;
 } 
 .footer__input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: var(--white-color);
